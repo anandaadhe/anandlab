@@ -1,0 +1,105 @@
+yum install git -y
+      git --version
+   10  which git
+   11  git config --global user.name "anandaadhe"
+   12  git config --global user.email "anandcloud0105@gmail.com"
+   13  git config --list
+   14  yum update all
+   15  hostnamectl ser-hostname mumbai
+   16  exec bash
+   17  hostnamectl set-hostname mumbai
+   18  exec bash
+   19  mkdir mumbaigit
+   20  cd mumbaigit
+   21  git init
+   22  cat >mumbai1
+   23  git status
+   24  git add .
+   25  git status
+   26  git commit -m "My new commit from desktop"
+   27  git status
+   28  git log
+   29  git show 520edffef3684087bab87df90667bb13c635cc1f
+   30  git remote add origin https://github.com/anandaadhe/anandlab.git
+   31  git push -u origin master
+   32  cat >mumbai1
+   33  git status
+   34  git add .
+   35  git status
+   36  git commit -m "My new commit from mumbai desktop"
+   37  git status
+   38  git log
+   39  git show 3c1c3ce4574488620e2a965fccf6fa137c6d99fa
+   40  git push -u origin master
+   41  ll
+   42  git log
+   43  git pull origin master
+   44  git log
+   45  git show 32f1bc2662af567a5c59375ae61c0537a40253e2
+   46  history
+
+
+Lab 2 Commands
+
+ yum install git -y
+    3  git --version
+    4  which git
+    5  git config --global user.name "adhe"
+    6  git config --global user.email "anandadhe4511@gmail.com"
+    7  git config --list
+    8  hostnamectl set-hostname singapore
+    9  exec bash
+   10  ls
+   11  ll
+   12  which git
+   13  mkdir singaporegit
+   14  cd singaporegit
+   15  git init
+   16  ls -a
+   17  git remote add origin https://github.com/anandaadhe/anandlab.git
+   18  git log
+   19  git status
+   20  git pull origin master
+   21  git log
+   22  git show 3c1c3ce4574488620e2a965fccf6fa137c6d99fa
+   23  cat >>mumbai1
+   24  cat mumbai1
+   25  git status
+   26  git add .
+   27  git status
+   28  git commit -m "My first commit from singapore desktop"
+   29  git status
+   30  git log
+   31  git show 32f1bc2662af567a5c59375ae61c0537a40253e2
+   32  git push origin master
+   33  history
+
+Git Ignore Commands
+
+cd mumbaigit
+   93  vi .gitignore
+   94  git add .gitignore
+   95  git commit -m "ignore file format"
+   96  git status
+   
+   98  git status
+   99  touch file1.txt file2.txt file3.java file4.css file5.java
+  100  ls
+  101  git status
+  102  git add .
+  103  git status
+  104  git commit -m "ignore java and css file"
+  105  git log
+  106  git show 8c8528c8a26f93b6246258ede2796d87ecd85e88
+  107  touch anand.java
+  108  git status
+  109  touch anand.txt
+  110  git status
+  111  git log -1
+  112  git log -2
+  113  git log --oneline
+  114  git log --oneline
+  115  git log --grep "ignore"
+  116  git log --grep "commit"
+  117  history
+
