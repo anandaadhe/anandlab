@@ -1,0 +1,54 @@
+My first file from EC2
+1. mount your privte key to git bash on your laptop
+2. to mount private key go to path ex: cd E: foldername (where key is saved)
+3. change permission for that key chmod 400 keyname
+4. ssh -i "mykey.pem" ec2-user@<Public-IP>
+5. sudo su (to get root prompt)
+6. now install git if you dont have it on your machine
+sudo yum update -y
+sudo yum install -y git
+
+7. now configure user name and email id
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+
+8. check configured user id and email
+git config --global --list
+
+9. if you have git account already then clone your repo on machine
+git clone https://github.com/yourusername/your-repo.git
+
+10. go to your repo
+cd anandlab
+
+11. create file
+echo "My first file from EC2" > file1.txt
+
+12. check file
+ls
+cat file1.txt
+
+13. Now stage abd commit your file
+git add file1.txt
+git commit -m "Added file1.txt from EC2"
+
+14. push to github
+git push origin main
+
+15. Optional - if user master
+git push origin master
+
+Note: to switch to master brance - #git checkout master
+
+16. Go to your GitHub repo page → refresh → you should see file1.txt
+
+----------------------------------------------------------
+That’s the basic cycle:
+
+git pull → get latest changes
+
+git add → stage changes
+
+git commit -m "message" → save changes locally
+
+git push → send changes to GitHub.
